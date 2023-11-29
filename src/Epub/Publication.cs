@@ -65,7 +65,7 @@ public class Publication : IDisposable
 
         using var reader = XmlReader.Create(entry.Open()).IgnoreNamespaces();
         var doc = XDocument.Load(reader);
-        var root = doc.CssSelectElement("rootfile[full-path][media-type=application/oebps-package+xml]") 
+        var root = doc.CssSelectElement("rootfile[full-path][media-type=application/oebps-package+xml]")
             ?? throw new InvalidArchiveException(ThisAssembly.Strings.MissingPackage);
 
         var path = root.Attribute("full-path")?.Value;

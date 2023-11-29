@@ -52,7 +52,7 @@ public partial class Package
         var ids = document.XPathSelectElements("opf:package/opf:metadata/dc:identifier", xmlns);
         var pid = (uid == null ?
             ids.FirstOrDefault() :
-            ids.FirstOrDefault(x => x.Attribute("id")?.Value == uid)) 
+            ids.FirstOrDefault(x => x.Attribute("id")?.Value == uid))
             ?? throw new InvalidArchiveException(ThisAssembly.Strings.MissingIdentifier);
 
         var date = document.XPathSelectElement("opf:package/opf:metadata/opf:meta[@property='dcterms:modified']", xmlns)?.Value;
