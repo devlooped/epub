@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Devlooped.Epub</AssemblyName>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <PackageId>Devlooped.Epub</PackageId>
+    <Description>Lightweight read-only API for processing EPUB documents.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Devlooped.Web" Version="1.2.0" />
+    <PackageReference Include="ISBN" Version="1.4.0" />
+    <PackageReference Include="NuGetizer" Version="1.2.0" />
+    <PackageReference Include="PolySharp" Version="1.14.0" PrivateAssets="all" />
+    <PackageReference Include="ThisAssembly.Strings" Version="1.4.1" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Tests" />
+  </ItemGroup>
+
+</Project>
