@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.0-alpha](https://github.com/devlooped/epub/tree/v1.0.0-alpha) (2023-11-29)
+## [v1.0.0-alpha](https://github.com/devlooped/epub/tree/v1.0.0-alpha) (2023-11-30)
 
 [Full Changelog](https://github.com/devlooped/epub/compare/ab08c80a33d1b356fdb6c422c77441857158200c...v1.0.0-alpha)
 
