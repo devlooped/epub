@@ -6,7 +6,7 @@ Lightweight read-only API for processing EPUB documents.
 [![Version](https://img.shields.io/nuget/v/Devlooped.Epub.svg?color=royalblue)](https://www.nuget.org/packages/Devlooped.Epub)
 [![Downloads](https://img.shields.io/nuget/dt/Devlooped.Epub.svg?color=green)](https://www.nuget.org/packages/Devlooped.Epub)
 [![License](https://img.shields.io/github/license/devlooped/epub.svg?color=blue)](https://github.com/devlooped/epub/blob/main/license.txt)
-[![Build](https://github.com/devlooped/epub/workflows/build/badge.svg?branch=main)](https://github.com/devlooped/epub/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/devlooped/epub/build.yml)](https://github.com/devlooped/epub/actions)
 
 <!-- #content -->
 ## Usage
