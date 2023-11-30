@@ -30,6 +30,19 @@ public sealed class PublicationTests : IDisposable
     }
 
     [Fact]
+    public void CanReadContentFragments()
+    {
+        using var pub = Publication.Open(@"Samples/CCyC_Comentado_Tomo_II.epub");
+
+        Assert.NotNull(pub.Package.Navigation);
+
+        foreach (var nav in pub.Package.Navigation)
+        {
+            var content = nav.Open();
+        }
+    }
+
+    [Fact]
     public void CanAccessPackageInformation()
     {
         using var pub = Publication.Open(@"Samples/how-to-think-about-the-economy.epub");

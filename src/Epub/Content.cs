@@ -1,6 +1,7 @@
 ﻿using System.IO.Compression;
 using System.Xml;
 using System.Xml.Linq;
+using Devlooped.Web;
 
 namespace Devlooped.Epub;
 
@@ -35,11 +36,8 @@ public class Content
             throw new InvalidArchiveException(ThisAssembly.Strings.MissingContent(Href));
 
         using var stream = entry.Open();
-        using var reader = XmlReader
-            .Create(stream, new XmlReaderSettings { DtdProcessing = DtdProcessing.Ignore })
-            .IgnoreNamespaces();
 
-        return XDocument.Load(reader);
+        return HtmlDocument.Load(stream);
     }
 
     /// <summary>
