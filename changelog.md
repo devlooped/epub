@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.1](https://github.com/devlooped/epub/tree/v1.0.1) (2023-11-30)
+
+[Full Changelog](https://github.com/devlooped/epub/compare/v1.0.0...v1.0.1)
+
+:sparkles: Implemented enhancements:
+
+- Add support for HTML entities in content docs [\#4](https://github.com/devlooped/epub/pull/4) (@kzu)
+
 ## [v1.0.0](https://github.com/devlooped/epub/tree/v1.0.0) (2023-11-30)
 
 [Full Changelog](https://github.com/devlooped/epub/compare/v1.0.0-alpha...v1.0.0)
